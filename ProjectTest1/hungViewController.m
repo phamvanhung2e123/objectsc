@@ -10,20 +10,30 @@
 
 @interface hungViewController ()
 
+
+@property (weak, nonatomic) IBOutlet UILabel *flipslabel;
+@property (nonatomic) int flipCount;
 @end
 
 @implementation hungViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)setFlipCount:(int)flipCount{
+    _flipCount = flipCount;
+    self.flipslabel.text = [NSString stringWithFormat:@"Flip: %d", _flipCount];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)touchCardButton:(UIButton *)sender {
+    NSLog(@"Hung dai hiep");
+    if([sender.currentTitle length]){
+        
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    }
+    else{
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
+        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+    }
+    self.flipCount++;
 }
 
 @end

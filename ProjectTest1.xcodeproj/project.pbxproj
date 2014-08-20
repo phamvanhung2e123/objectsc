@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EA998A2199A961500359D57 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA998A1199A961500359D57 /* Card.m */; };
+		6EC23633199179F1008D44F4 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23632199179F1008D44F4 /* PlayingCard.m */; };
+		6EC2363619917A24008D44F4 /* Desk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC2363519917A24008D44F4 /* Desk.m */; };
+		6EC2363919917A4F008D44F4 /* PlayingCardDesk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC2363819917A4F008D44F4 /* PlayingCardDesk.m */; };
 		6ED469671921F03600346BE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED469661921F03600346BE3 /* Foundation.framework */; };
 		6ED469691921F03600346BE3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED469681921F03600346BE3 /* CoreGraphics.framework */; };
 		6ED4696B1921F03600346BE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED4696A1921F03600346BE3 /* UIKit.framework */; };
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6EA998A0199A961500359D57 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		6EA998A1199A961500359D57 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		6EC23631199179F1008D44F4 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Model/PlayingCard.h; sourceTree = "<group>"; };
+		6EC23632199179F1008D44F4 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
+		6EC2363419917A24008D44F4 /* Desk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Desk.h; path = Model/Desk.h; sourceTree = "<group>"; };
+		6EC2363519917A24008D44F4 /* Desk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Desk.m; path = Model/Desk.m; sourceTree = "<group>"; };
+		6EC2363719917A4F008D44F4 /* PlayingCardDesk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDesk.h; path = Model/PlayingCardDesk.h; sourceTree = "<group>"; };
+		6EC2363819917A4F008D44F4 /* PlayingCardDesk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDesk.m; path = Model/PlayingCardDesk.m; sourceTree = "<group>"; };
 		6ED469631921F03600346BE3 /* ProjectTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED469661921F03600346BE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6ED469681921F03600346BE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +91,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EC2363019917908008D44F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6EC23631199179F1008D44F4 /* PlayingCard.h */,
+				6EC23632199179F1008D44F4 /* PlayingCard.m */,
+				6EC2363419917A24008D44F4 /* Desk.h */,
+				6EC2363519917A24008D44F4 /* Desk.m */,
+				6EC2363719917A4F008D44F4 /* PlayingCardDesk.h */,
+				6EC2363819917A4F008D44F4 /* PlayingCardDesk.m */,
+				6EA998A0199A961500359D57 /* Card.h */,
+				6EA998A1199A961500359D57 /* Card.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		6ED4695A1921F03600346BE3 = {
 			isa = PBXGroup;
 			children = (
@@ -112,11 +139,10 @@
 		6ED4696C1921F03600346BE3 /* ProjectTest1 */ = {
 			isa = PBXGroup;
 			children = (
-				6ED469751921F03600346BE3 /* hungAppDelegate.h */,
-				6ED469761921F03600346BE3 /* hungAppDelegate.m */,
 				6ED469781921F03600346BE3 /* Main.storyboard */,
 				6ED4697B1921F03600346BE3 /* hungViewController.h */,
 				6ED4697C1921F03600346BE3 /* hungViewController.m */,
+				6EC2363019917908008D44F4 /* Model */,
 				6ED4697E1921F03600346BE3 /* Images.xcassets */,
 				6ED4696D1921F03600346BE3 /* Supporting Files */,
 			);
@@ -126,6 +152,8 @@
 		6ED4696D1921F03600346BE3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6ED469751921F03600346BE3 /* hungAppDelegate.h */,
+				6ED469761921F03600346BE3 /* hungAppDelegate.m */,
 				6ED4696E1921F03600346BE3 /* ProjectTest1-Info.plist */,
 				6ED4696F1921F03600346BE3 /* InfoPlist.strings */,
 				6ED469721921F03600346BE3 /* main.m */,
@@ -200,6 +228,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = phamvanhung;
 				TargetAttributes = {
+					6ED469621921F03600346BE3 = {
+						DevelopmentTeam = VVTP26G4SA;
+					};
 					6ED469831921F03600346BE3 = {
 						TestTargetID = 6ED469621921F03600346BE3;
 					};
@@ -251,8 +282,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ED4697D1921F03600346BE3 /* hungViewController.m in Sources */,
+				6EC2363919917A4F008D44F4 /* PlayingCardDesk.m in Sources */,
 				6ED469771921F03600346BE3 /* hungAppDelegate.m in Sources */,
+				6EC2363619917A24008D44F4 /* Desk.m in Sources */,
 				6ED469731921F03600346BE3 /* main.m in Sources */,
+				6EA998A2199A961500359D57 /* Card.m in Sources */,
+				6EC23633199179F1008D44F4 /* PlayingCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,10 +412,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProjectTest1/ProjectTest1-Prefix.pch";
 				INFOPLIST_FILE = "ProjectTest1/ProjectTest1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,10 +428,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProjectTest1/ProjectTest1-Prefix.pch";
 				INFOPLIST_FILE = "ProjectTest1/ProjectTest1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -457,6 +498,7 @@
 				6ED469971921F03600346BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6ED469981921F03600346BE3 /* Build configuration list for PBXNativeTarget "ProjectTest1Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +507,7 @@
 				6ED4699A1921F03600346BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
