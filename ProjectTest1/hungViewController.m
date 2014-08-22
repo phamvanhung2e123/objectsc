@@ -7,7 +7,8 @@
 //
 
 #import "hungViewController.h"
-
+#import "PlayingCardDesk.h"
+#import "PlayingCard.h"
 @interface hungViewController ()
 
 
@@ -24,6 +25,9 @@
 
 - (IBAction)touchCardButton:(UIButton *)sender {
     NSLog(@"Hung dai hiep");
+    PlayingCardDesk *playcard = [[PlayingCardDesk alloc]init];
+    Card *card = [playcard drawRandomCard];
+    
     if([sender.currentTitle length]){
         
         [sender setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
@@ -31,7 +35,7 @@
     }
     else{
         [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
-        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+        [sender setTitle:[card contents] forState:UIControlStateNormal];
     }
     self.flipCount++;
 }
