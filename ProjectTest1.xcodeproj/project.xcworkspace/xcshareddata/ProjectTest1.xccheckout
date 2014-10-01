@@ -10,29 +10,29 @@
 	<string>ProjectTest1</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CAE46AA7-657A-48DC-918C-DD3EC7767A54</key>
+		<key>E98B8A7A7A5A404920410E4B6B88A6A34A0A25B9</key>
 		<string>ssh://github.com/phamvanhung2e123/objectsc.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ProjectTest1.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CAE46AA7-657A-48DC-918C-DD3EC7767A54</key>
+		<key>E98B8A7A7A5A404920410E4B6B88A6A34A0A25B9</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/phamvanhung2e123/objectsc.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CAE46AA7-657A-48DC-918C-DD3EC7767A54</string>
+	<string>E98B8A7A7A5A404920410E4B6B88A6A34A0A25B9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CAE46AA7-657A-48DC-918C-DD3EC7767A54</string>
+			<string>E98B8A7A7A5A404920410E4B6B88A6A34A0A25B9</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ProjectTest1</string>
 		</dict>

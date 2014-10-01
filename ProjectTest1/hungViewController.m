@@ -14,9 +14,22 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *flipslabel;
 @property (nonatomic) int flipCount;
+@property (nonatomic, strong) Desk *deck;
 @end
 
 @implementation hungViewController
+
+- (Desk *)deck
+{
+    if(!_deck) _deck = [self createDeck];
+    return _deck;
+}
+
+- (Desk *)createDeck
+{
+    return [[PlayingCardDesk alloc] init];
+}
+
 
 - (void)setFlipCount:(int)flipCount{
     _flipCount = flipCount;
@@ -24,9 +37,8 @@
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
-    //NSLog(@"Hung dai hiep");
-    PlayingCardDesk *playcard = [[PlayingCardDesk alloc]init];
-    Card *card = [playcard drawRandomCard];
+    NSLog(@"Hung dai hiep");
+ //   PlayingCardDesk *playcard = [[PlayingCardDesk alloc]init];
     
     if([sender.currentTitle length]){
         
@@ -34,10 +46,16 @@
         [sender setTitle:@"" forState:UIControlStateNormal];
     }
     else{
-        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
-        [sender setTitle:[card contents] forState:UIControlStateNormal];
+        Card *card = [self.deck drawRandomCard];
+        
+        if(card){
+            
+            self.flipCount++;
+            [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
+            [sender setTitle:[card contents] forState:UIControlStateNormal];
+        }
     }
-    self.flipCount++;
+
 }
 
 @end

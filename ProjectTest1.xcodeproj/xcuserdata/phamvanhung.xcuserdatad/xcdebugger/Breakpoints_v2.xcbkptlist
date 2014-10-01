@@ -10,13 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProjectTest1/hungViewController.m"
-            timestampString = "433839413.767904"
+            timestampString = "433842809.304438"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-touchCardButton:"
-            landmarkType = "5">
+            startingLineNumber = "73"
+            endingLineNumber = "73">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,25 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProjectTest1/hungViewController.m"
-            timestampString = "433839413.767904"
+            timestampString = "433842809.304438"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProjectTest1/hungViewController.m"
-            timestampString = "433839413.767904"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "-touchCardButton:"
             landmarkType = "5">
          </BreakpointContent>

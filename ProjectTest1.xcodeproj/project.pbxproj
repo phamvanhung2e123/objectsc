@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E52467219DBF49F0095331A /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E52467119DBF49F0095331A /* CardMatchingGame.m */; };
 		6EA998A2199A961500359D57 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA998A1199A961500359D57 /* Card.m */; };
 		6EC23633199179F1008D44F4 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC23632199179F1008D44F4 /* PlayingCard.m */; };
 		6EC2363619917A24008D44F4 /* Desk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC2363519917A24008D44F4 /* Desk.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E52467019DBF49F0095331A /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		6E52467119DBF49F0095331A /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 		6EA998A0199A961500359D57 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		6EA998A1199A961500359D57 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		6EC23631199179F1008D44F4 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Model/PlayingCard.h; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 		6EC2363019917908008D44F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6E52467019DBF49F0095331A /* CardMatchingGame.h */,
+				6E52467119DBF49F0095331A /* CardMatchingGame.m */,
 				6EC23631199179F1008D44F4 /* PlayingCard.h */,
 				6EC23632199179F1008D44F4 /* PlayingCard.m */,
 				6EC2363419917A24008D44F4 /* Desk.h */,
@@ -285,6 +290,7 @@
 				6EC2363919917A4F008D44F4 /* PlayingCardDesk.m in Sources */,
 				6ED469771921F03600346BE3 /* hungAppDelegate.m in Sources */,
 				6EC2363619917A24008D44F4 /* Desk.m in Sources */,
+				6E52467219DBF49F0095331A /* CardMatchingGame.m in Sources */,
 				6ED469731921F03600346BE3 /* main.m in Sources */,
 				6EA998A2199A961500359D57 /* Card.m in Sources */,
 				6EC23633199179F1008D44F4 /* PlayingCard.m in Sources */,
