@@ -9,12 +9,14 @@
 #import "hungViewController.h"
 #import "PlayingCardDesk.h"
 #import "PlayingCard.h"
+#import "CardMatchingGame.h"
 @interface hungViewController ()
 
 
 @property (weak, nonatomic) IBOutlet UILabel *flipslabel;
 @property (nonatomic) int flipCount;
 @property (nonatomic, strong) Desk *deck;
+@property (nonatomic, strong) CardMatchingGame *game;
 @end
 
 @implementation hungViewController
