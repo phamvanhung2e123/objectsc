@@ -41,8 +41,10 @@
         _rank=rank;
     }
 }
+
 - (void)setSuit:(NSString *)suit
 {
+    NSLog(@"%@",suit);
     if ([[PlayingCard validSuits]containsObject: suit]) {
         _suit=suit;
     }
@@ -51,6 +53,8 @@
 
 - (NSString *)suit
 {
+   
+    NSLog(@"%@",_suit);
     return _suit ? _suit : @"?";
 }
 @end

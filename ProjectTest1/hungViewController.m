@@ -24,7 +24,7 @@
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
-    NSLog(@"Hung dai hiep");
+    //NSLog(@"Hung dai hiep");
     PlayingCardDesk *playcard = [[PlayingCardDesk alloc]init];
     Card *card = [playcard drawRandomCard];
     
