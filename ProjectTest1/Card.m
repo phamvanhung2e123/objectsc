@@ -19,8 +19,10 @@
     for (Card * card in othersCards){
         if([card.contents isEqualToString:self.contents]){
             score=1;
+            NSLog(@"Score :1 %@  %@",card.contents,self.contents);
         }
     }
+    
     return score;
 }
 

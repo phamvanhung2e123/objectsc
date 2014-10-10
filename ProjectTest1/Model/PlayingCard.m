@@ -10,6 +10,22 @@
 
 @implementation PlayingCard
 
+- (int)match:(NSArray *)othersCards
+{
+    int score = 0;
+    if ([othersCards count] == 1){
+        id card = [othersCards firstObject];
+        if([card isKindOfClass:[PlayingCard class]]){
+            PlayingCard *otherCard = (PlayingCard*)card;
+            if ( [self.suit isEqualToString:otherCard.suit]){
+                score = 1;
+            }else if(self.rank == otherCard.rank){
+                score = 4;
+            }
+        }
+    }
+    return score;
+}
 
 - (NSString *)contents
 {
@@ -44,7 +60,7 @@
 
 - (void)setSuit:(NSString *)suit
 {
-    NSLog(@"%@",suit);
+    //NSLog(@"%@",suit);
     if ([[PlayingCard validSuits]containsObject: suit]) {
         _suit=suit;
     }
@@ -54,7 +70,7 @@
 - (NSString *)suit
 {
    
-    NSLog(@"%@",_suit);
+    //NSLog(@"%@",_suit);
     return _suit ? _suit : @"?";
 }
 @end
